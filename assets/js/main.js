@@ -207,7 +207,6 @@
 		}
 		else {
 			hideMessage();
-			showRandom();
 			showError();
 		}
 
