@@ -25,23 +25,54 @@
   <body>
 
     <div class="container">
-      <div class="header clearfix">    
-        <h3 class="text-muted">Hiragana learning</h3>
+      <div class="header clearfix">
+        <ul class="nav nav-tabs nav-justified">
+          <li role="presentation" class="active">
+            <a href="#hiragana" aria-controls="home" role="tab" data-toggle="tab">Hiragana</a>
+          </li>
+          <li role="presentation">
+            <a href="#katakana" aria-controls="katakana" role="tab" data-toggle="tab">Katakana</a>
+          </li>
+          <li role="presentation">
+            <a href="#kanjis" aria-controls="kanjis" role="tab" data-toggle="tab">Kanjis</a>
+          </li>
+        </ul>    
       </div>
     <div class="alert alert-success" role="alert">
 		  <strong>Well done!</strong> you are doing well!!.
-	</div>
+	  </div>
     <div class="alert alert-danger" role="alert" >
 		  <strong>Oh snap!</strong> Try again!!.
-	</div>
+	 </div>
 
-      <div class="jumbotron">
-        <h1 id="japanese-letter">あ</h1>
+<!-- tabs -->
+    <div class="tab-content">
+      <!-- tab 1 -->
+      <div role="tabpanel" class="tab-pane active" id="hiragana">      
+        <div class="jumbotron">
+          <h1 id="hiragana-letter">あ</h1>
+        </div>
       </div>
-
+      <!-- fin tab 1 -->
+      <!-- tab 2 -->
+      <div role="tabpanel" class="tab-pane" id="katakana">      
+        <div class="jumbotron">
+          <h1 id="katakana-letter">katanaka</h1>
+        </div>
+      </div>
+      <!-- fin tab 2 -->
+      <!-- tab 3 -->
+      <div role="tabpanel" class="tab-pane" id="kanjis">      
+        <div class="jumbotron">
+          <h1 id="japanese-letter">kanjis</h1>
+        </div>
+      </div>
+      <!-- fin tab 3 -->
+    </div>
+<!-- fin de los tabs -->
 		      <div class="row marketing">
 		        <div class="col-lg-6">
-					<input id="letter-to-validate" type="text" name="letter">
+					     <input id="letter-to-validate" type="text" name="letter">
 		        </div>
 
 		        <div class="col-lg-6">

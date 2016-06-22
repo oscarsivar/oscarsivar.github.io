@@ -14,12 +14,22 @@
 	"ま", "み", "む", "め", "も", "や", "ゆ", "よ", "ら", "り",
 	"る", "れ", "ろ", "わ", "ゐ", "ゑ", "を", "ん"];
 
-	var japaneseLetter = document.getElementById("japanese-letter");
+	var katakana =
+	["ア", "イ", "ウ", "エ", "オ", "カ", "キ", "ク", "ケ", "コ",
+	"サ", "シ", "ス", "セ", "ソ", "タ", "チ", "ツ", "テ", "ト",
+	"ナ", "ニ", "ヌ", "ネ", "ノ", "ハ", "ヒ", "フ", "ヘ", "ホ",
+	"マ", "ミ", "ム", "メ", "モ", "ヤ", "ユ", "ヨ", "ラ", "リ",
+	"ル", "レ", "ロ", "ワ", "ヲ", "ン"];
+
+
+	var hiraganaLetter = document.getElementById("hiragana-letter");
+	var katakanaLetter = document.getElementById("katakana-letter");
+
 		
 
 	function showRandom(){
 		var letter= hiragana[Math.floor(Math.random() * hiragana.length)];
-		japaneseLetter.innerHTML = letter;
+		hiraganaLetter.innerHTML = letter;
 	}
 
 	function showMessage(){
@@ -198,7 +208,7 @@
 
 		}
 
-		if(japaneseLetter.innerHTML==letterToCheck){
+		if(hiraganaLetter.innerHTML==letterToCheck){
 			hideError();
 			showRandom();
 			showMessage();
