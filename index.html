@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!--<link rel="icon" href="../../favicon.ico">-->
+    <meta name="description" content="Hiragana, Katakana, Kanjis">
+    <meta name="author" content="Oscar Elias @oscarsivar">
+    <link rel="icon" href="favicon.ico">
 
     <title>Japanese letter validator</title>
 
@@ -25,7 +25,7 @@
   <body>
 
     <div class="container">
-      <div class="header clearfix">
+      <div class="header clearfix" style ="border-bottom: 0">
         <ul class="nav nav-tabs nav-justified">
           <li role="presentation" class="active">
             <a href="#hiragana" aria-controls="home" role="tab" data-toggle="tab">Hiragana</a>
@@ -52,41 +52,73 @@
         <div class="jumbotron">
           <h1 id="hiragana-letter">あ</h1>
         </div>
+        <div class="row marketing">
+          <div class="col-lg-6">
+            <input class="form-control" id="letter-to-validate-hiragana" type="text" name="letter">
+          </div>
+
+          <div class="col-lg-6">
+            <p>
+              <a onclick='validateHiragana()' class="btn btn-lg btn-success btn-block" href="#" role="button" >Validar</a>
+            </p>
+          </div>
+        </div>
       </div>
+
+
       <!-- fin tab 1 -->
       <!-- tab 2 -->
       <div role="tabpanel" class="tab-pane" id="katakana">      
         <div class="jumbotron">
           <h1 id="katakana-letter">katanaka</h1>
         </div>
+        <div class="row marketing">
+          <div class="col-lg-6">
+            <input class="form-control" id="letter-to-validate-katakana" type="text" name="letter">
+          </div>
+
+          <div class="col-lg-6">
+            <p>
+              <a onclick='validateKatana()' class="btn btn-lg btn-success btn-block" href="#" role="button" >Validar</a>
+            </p>
+          </div>
+        </div>
       </div>
+
+
       <!-- fin tab 2 -->
       <!-- tab 3 -->
       <div role="tabpanel" class="tab-pane" id="kanjis">      
         <div class="jumbotron">
-          <h1 id="japanese-letter">kanjis</h1>
+          <h1 id="kanji-letter">kanjis</h1>
+        </div>
+
+        <div class="row marketing">
+          <div class="col-lg-6">
+            <input class="form-control" id="letter-to-validate-kanji" type="text" name="letter">
+          </div>
+
+          <div class="col-lg-6">
+            <p>
+              <a onclick='validateKanji()' class="btn btn-lg btn-success btn-block" href="#" role="button" >Validar</a>
+            </p>
+          </div>
         </div>
       </div>
       <!-- fin tab 3 -->
     </div>
 <!-- fin de los tabs -->
-		      <div class="row marketing">
-		        <div class="col-lg-6">
-					     <input id="letter-to-validate" type="text" name="letter">
-		        </div>
 
-		        <div class="col-lg-6">
-		        	<p>
-		        		<a onclick='validateLetter()' class="btn btn-lg btn-success" href="#" role="button" >Validar</a> 
-		        	</p>
-		        </div>
-		      </div>
       <footer class="footer">
         <p>&copy; 2016 Japanese, Inc.</p>
       </footer>
 	<br><br><br><br><br><br><br><br>
      <div>
-     	<img style="height:100%;width:100%" src="assets/img/hiragana.png" alt="">
+      <img style="height:100%;width:100%" src="assets/img/hiragana.png" alt="">
+     </div>
+  
+     <div>
+     	<img style="height:100%;width:100%" src="assets/img/katakana.png" alt="">
      </div>
 	
     </div> <!-- /container -->
